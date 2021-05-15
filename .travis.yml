@@ -1,0 +1,27 @@
+language: ruby
+rbenv:
+- 2.5.3
+cache:
+- bundler
+- yarn
+addons:
+  postgresql: 9.6
+before_install:
+- gem install bundler
+- nvm install --lts
+before_script:
+- yarn
+script:
+- bundle exec rake
+env:
+  global:
+    secure: 
+deploy:
+  provider: heroku
+  api_key:
+    secure: jUqyswENlTE3JXadVQ6NJiV6obOlPuwxnSUrL9YOz1nJI1ZyTU+jPS+vlDwajkR4SWAyhz6hZWaKqO4NfI4mNGHCARoKIpXYmgvKAwr4p5MAkZscD9RunX83m8RZBL/Vfc7tkwDO5+wdbKSmrPDvELdBD2I2E/ys6QSplX4t6K1dP1Dbf8OS2p/jOc3HIZE0GqK5iI4DeqeTFjO0htNWaQ7cd9WsxxDZ998N9MuJyLGQ6g48O6hZ88lVTad9NqkE/BXd5Au85BiwvhRYi1lOsWjJqaY3Torj64+nFGITIsC9Sk8gbYxN7OOto7GSNEeB/34x+NweIPJljNPd5w+DQDVBPiyeEwrsv8eARyOERDexuRNgAiXX2WraneXsH9CADROebkgAqon4S8NBpQxGLV8vAkHNWP77+hft9ciQhe1sPIU2etmNOU55MxiNA9wFu+T1jVVsEpxRATrBizC/NNHlV/ggAEK1k2muh6IZe/dUFKoNRno/xP4ew1D0G595y3HxstR1VJu6hSx4Y/c9t/yngHETpP0yJ+jiRM5z4/6uNnlfocPRIIvKee9pvpBrXNLhVROk6O1ns4di3fl8gkL4sEbIqeuHztEp0rHzO5hFBFle1xnoyEiVlDOhaj0qeauW1NYEVKd1yAxb3DeRgXfEjQY50IAo+0yEMYxBOIA=
+  app: open-weather-service
+  on:
+    repo: Quick-Command/weather_service
+    branch: main
+  skip_cleanup: "‘true’"
