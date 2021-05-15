@@ -115,3 +115,9 @@ VCR.configure do |config|
   config.filter_sensitive_data()
   config.allow_http_connections_when_no_cassette = true
 end
+
+#testing method to check hash keys and values
+def check_hash_structure(hash, key, data_type)
+  expect(hash).to have_key(key)
+  expect(hash[key]).to be_a(data_type)
+end
