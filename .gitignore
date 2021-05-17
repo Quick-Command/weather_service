@@ -1,3 +1,11 @@
 # Ignore application configure
 config/application.yml
+<<<<<<< HEAD
 /coverage
+=======
+
+# Ignore application configuration
+/config/application.yml
+
+/coverage/
+>>>>>>> 7d2c7fd... fix tests

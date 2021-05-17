@@ -48,6 +48,7 @@ RSpec.describe MapQuestService do
         check_hash_structure(trip_info, :route, Hash)
         check_hash_structure(trip_info[:route], :formattedTime, String)
         check_hash_structure(trip_info[:route], :time, Numeric)
+        check_hash_structure(trip_info[:route], :distance, Numeric)
       end
     end
 
@@ -64,6 +65,7 @@ RSpec.describe MapQuestService do
         check_hash_structure(trip_info, :route, Hash)
         check_hash_structure(trip_info[:route], :formattedTime, String)
         check_hash_structure(trip_info[:route], :time, Numeric)
+        check_hash_structure(trip_info[:route], :distance, Numeric)
       end
     end
   end
