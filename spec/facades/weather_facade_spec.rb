@@ -6,7 +6,6 @@ RSpec.describe WeatherFacade do
   it '.forecast' do
     VCR.use_cassette('jacksonville,fl') do
       forecast = WeatherFacade.forecast('jacksonville,fl')
-
       expect(forecast).to have_key(:lat)
       expect(forecast).to have_key(:lng)
     end

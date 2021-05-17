@@ -19,7 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
+=======
+      - Sat, 15 May 2021 18:42:16 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,7 +39,11 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
+=======
+      - Sat, 15 May 2021 18:42:16 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +51,11 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
+<<<<<<< HEAD
       - JSESSIONID=5BD9D579EFDFD01819292C81546ED863; Path=/; HttpOnly; Secure
+=======
+      - JSESSIONID=60BF62B59850CD409DFEC4DDE69F3927; Path=/; HttpOnly; Secure
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Status:
       - success
       Transactionweight:
@@ -55,8 +67,13 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"jacksonville,fl"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Jacksonville","adminArea5Type":"City","adminArea4":"Duval
+<<<<<<< HEAD
         County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1177329328"}]}]}'
   recorded_at: Mon, 17 May 2021 20:15:45 GMT
+=======
+        County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-710496654"}]}]}'
+  recorded_at: Sat, 15 May 2021 18:42:16 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
 - request:
     method: get
     uri: https://mapquestapi.com/geocoding/v1/address?key=MAPQUEST_KEY&location=jacksonville,fl
@@ -76,7 +93,11 @@ http_interactions:
       message: OK
     headers:
       Date:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
+=======
+      - Sat, 15 May 2021 18:42:17 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -92,7 +113,11 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
+=======
+      - Sat, 15 May 2021 18:42:17 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -100,7 +125,11 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
+<<<<<<< HEAD
       - JSESSIONID=7BC38F9677BC46DA4A79CC1BACACB251; Path=/; HttpOnly; Secure
+=======
+      - JSESSIONID=E75CA8FEC647FA183E9ADBE8C59D9FFE; Path=/; HttpOnly; Secure
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Status:
       - success
       Transactionweight:
@@ -112,6 +141,11 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"jacksonville,fl"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Jacksonville","adminArea5Type":"City","adminArea4":"Duval
+<<<<<<< HEAD
         County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1473321617"}]}]}'
   recorded_at: Mon, 17 May 2021 20:15:45 GMT
+=======
+        County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1843408644"}]}]}'
+  recorded_at: Sat, 15 May 2021 18:42:17 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
 recorded_with: VCR 6.0.0

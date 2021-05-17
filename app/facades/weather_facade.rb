@@ -11,4 +11,5 @@ class WeatherFacade
    coordinates = location_data[:results][0][:locations][0][:latLng]
    coordinates if coordinates != { lat: 39.390897, lng: -99.066067}
  end
+
 end

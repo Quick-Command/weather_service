@@ -33,6 +33,7 @@ RSpec.describe MapQuestService do
       end
     end
   end
+<<<<<<< HEAD
 
   describe '.distance_call' do
     it 'gets info for a trip between two cities' do
@@ -69,4 +70,6 @@ RSpec.describe MapQuestService do
       end
     end
   end
+=======
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
 end

@@ -19,11 +19,19 @@ http_interactions:
       message: OK
     headers:
       Date:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '1038'
+=======
+      - Sat, 15 May 2021 18:43:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1037'
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,7 +43,11 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
+<<<<<<< HEAD
       - Mon, 17 May 2021 20:15:45 GMT
+=======
+      - Sat, 15 May 2021 18:43:52 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +55,11 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
+<<<<<<< HEAD
       - JSESSIONID=CC0374852CA6C9F2206198D9D7A45DD0; Path=/; HttpOnly; Secure
+=======
+      - JSESSIONID=2B1675B65D23804ABC54B98ABD0FC072; Path=/; HttpOnly; Secure
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
       Status:
       - success
       Transactionweight:
@@ -55,6 +71,11 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"jacksonville,fl"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Jacksonville","adminArea5Type":"City","adminArea4":"Duval
+<<<<<<< HEAD
         County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-2141010516"}]}]}'
   recorded_at: Mon, 17 May 2021 20:15:45 GMT
+=======
+        County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1649452333"}]}]}'
+  recorded_at: Sat, 15 May 2021 18:43:52 GMT
+>>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
 recorded_with: VCR 6.0.0
