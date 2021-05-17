@@ -13,13 +13,15 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require "./config/environment"
 require 'simplecov'
 SimpleCov.start
 require 'webmock/rspec'
 require 'vcr'
+require 'rack/test'
 # require './app/controllers/weather_service_app.rb'
 
-Webmock.disable_net_connect!(allow_localhost: true)
+WebMock.disable_net_connect!(allow_localhost: true)
 
 RSpec.configure do |config|
   config.include WebMock::API
@@ -112,6 +114,13 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
-  config.filter_sensitive_data()
+  config.filter_sensitive_data('MAPQUEST_KEY') { ENV['MAPQUEST_KEY'] }
+  config.filter_sensitive_data('WEATHER_KEY') { ENV['WEATHER_KEY'] }
   config.allow_http_connections_when_no_cassette = true
+end
+
+#testing method to check hash keys and values
+def check_hash_structure(hash, key, data_type)
+  expect(hash).to have_key(key)
+  expect(hash[key]).to be_a(data_type)
 end
