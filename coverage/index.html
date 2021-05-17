@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-17T13:17:56-06:00">2021-05-17T13:17:56-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-17T14:15:46-06:00">2021-05-17T14:15:46-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="yellow">
-  88.89%
+      <span class="green">
+  100.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.06
+         1.21
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>72</b> relevant lines,
-    <span class="green"><b>64</b> lines covered</span> and
-    <span class="red"><b>8</b> lines missed. </span>
-    (<span class="yellow">
-  88.89%
+    <b>82</b> relevant lines,
+    <span class="green"><b>82</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed. </span>
+    (<span class="green">
+  100.0%
 </span>
 )
   </div>
@@ -84,11 +84,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#65da6e58175d4072ca5d85c16fdbc5eb8cb05e74" class="src_link" title="app/services/map_quest_service.rb">app/services/map_quest_service.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">17</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">2.00</td>
             
           </tr>
         
@@ -105,12 +105,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ad252e0752c1d98456aa7f3fd690463d93d8215b" class="src_link" title="spec/services/mapquest_service_spec.rb">spec/services/mapquest_service_spec.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">82.61 %</td>
-            <td class="cell--number">70</td>
-            <td class="cell--number">46</td>
-            <td class="cell--number">38</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">0.83</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">72</td>
+            <td class="cell--number">48</td>
+            <td class="cell--number">48</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -330,8 +330,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>17</b> relevant lines.
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -437,62 +437,62 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def self.distance_call(params)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      response = distance_conn.get do |req|</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def self.conn</code>
+            <code class="ruby">        req.params[:from] = params[:origin]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="12">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    @conn ||= Faraday.new(&#39;https://mapquestapi.com/geocoding/v1/address&#39;) do |req|</code>
+            <code class="ruby">        req.params[:to] = params[:destination]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">      req.params[:key] = ENV[&#39;MAPQUEST_KEY&#39;]</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="14">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">      JSON.parse(response.body, symbolize_names: true)</code>
           </li>
         </div>
       
@@ -503,12 +503,166 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.conn</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="20">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @conn ||= Faraday.new(&#39;https://mapquestapi.com/geocoding/v1/address&#39;) do |req|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      req.params[:key] = ENV[&#39;MAPQUEST_KEY&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.distance_conn</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="26">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @distance_conn ||= Faraday.new(&#39;http://www.mapquestapi.com/directions/v2/route&#39;) do |req|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      req.params[:key] = ENV[&#39;MAPQUEST_KEY&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -712,8 +866,8 @@
   <div class="header">
     <h3>spec/services/mapquest_service_spec.rb</h3>
     <h4>
-      <span class="yellow">
-  82.61%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -722,9 +876,9 @@
     
 
     <div class="t-line-summary">
-      <b>46</b> relevant lines.
-      <span class="green"><b>38</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <b>48</b> relevant lines.
+      <span class="green"><b>48</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -1241,8 +1395,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="47">
-            
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
             
 
             
@@ -1252,8 +1406,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="48">
-            
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
             
 
             
@@ -1263,8 +1417,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="49">
-            
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
             
 
             
@@ -1274,8 +1428,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="50">
-            
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
             
 
             
@@ -1285,13 +1439,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">        check_hash_structure(trip_info[:route], :distance, Numeric)</code>
           </li>
         </div>
       
@@ -1302,7 +1456,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1313,18 +1467,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="54">
+            
             
 
             
 
-            <code class="ruby">    it &#39;gets info for a trip between different cities&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1335,7 +1489,7 @@
 
             
 
-            <code class="ruby">      VCR.use_cassette(&#39;no_to_chicago&#39;) do</code>
+            <code class="ruby">    it &#39;gets info for a trip between different cities&#39; do</code>
           </li>
         </div>
       
@@ -1346,18 +1500,18 @@
 
             
 
-            <code class="ruby">        trip_params = {</code>
+            <code class="ruby">      VCR.use_cassette(&#39;no_to_chicago&#39;) do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">          origin: &#39;New Orleans, LA&#39;,</code>
+            
+
+            <code class="ruby">        trip_params = {</code>
           </li>
         </div>
       
@@ -1368,7 +1522,7 @@
 
             
 
-            <code class="ruby">          destination: &#39;Chicago, IL&#39;</code>
+            <code class="ruby">          origin: &#39;New Orleans, LA&#39;,</code>
           </li>
         </div>
       
@@ -1379,7 +1533,7 @@
 
             
 
-            <code class="ruby">        }</code>
+            <code class="ruby">          destination: &#39;Chicago, IL&#39;</code>
           </li>
         </div>
       
@@ -1390,12 +1544,23 @@
 
             
 
+            <code class="ruby">        }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
+          <li class="covered" data-hits="1" data-linenumber="62">
             <span class="hits">1</span>
             
 
@@ -1406,7 +1571,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="62">
+          <li class="never" data-hits="" data-linenumber="63">
             
             
 
@@ -1417,8 +1582,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="63">
-            
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
             
 
             
@@ -1428,8 +1593,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="64">
-            
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
             
 
             
@@ -1439,8 +1604,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="65">
-            
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
             
 
             
@@ -1450,8 +1615,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="66">
-            
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
             
 
             
@@ -1461,24 +1626,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">        check_hash_structure(trip_info[:route], :distance, Numeric)</code>
           </li>
         </div>
       
@@ -1489,12 +1643,34 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 
