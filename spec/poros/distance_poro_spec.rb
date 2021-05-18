@@ -23,7 +23,7 @@ RSpec.describe DistancePoro do
     expect(distance_info).to have_attributes(
       start_city: params[:origin],
       end_city: params[:destination],
-      time: "18 hours, 24 minutes away.",
+      drive_time: "18 hours, 24 minutes away.",
       distance: 1300)
   end
 
@@ -47,7 +47,7 @@ RSpec.describe DistancePoro do
     expect(distance_info).to have_attributes(
       start_city: params[:origin],
       end_city: params[:destination],
-      time: "Can't reach incident.",
+      drive_time: "Can't reach incident.",
       distance: 1300)
   end
 end
