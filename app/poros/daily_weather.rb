@@ -17,6 +17,7 @@ class DailyWeather
     @sunset = Time.at(data[:sunset]).to_s
     @min_temp = data[:temp][:min]
     @max_temp = data[:temp][:max]
+    @humidity = data[:humidity]
     @wind_speed = data[:wind_speed]
     @wind_deg = data[:wind_deg]
     @wind_gust = data[:wind_gust]
