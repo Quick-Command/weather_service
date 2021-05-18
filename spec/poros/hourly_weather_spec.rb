@@ -3,7 +3,6 @@ require './app/poros/hourly_weather'
 require './app/services/map_quest_service'
 require './app/services/weather_service'
 
-
 RSpec.describe HourlyWeather do
   describe 'happy path' do
     it 'should build an Hourly Weather PORO based on input' do
