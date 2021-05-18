@@ -12,11 +12,7 @@ RSpec.describe 'the weather service' do
         VCR.use_cassette('weather_data_chicago') do
           lat = 44.058088
           lng = -121.31515
-          # mapquest_data = MapquestService.find_location(location)
-          # latitude = mapquest_data[:results].first[:locations].first[:latLng][:lat]
-          # longitude = mapquest_data[:results].first[:locations].first[:latLng][:lng]
-
-          data = WeatherService.find_forecast_for_location(lat, lng)
+          data = WeatherService.get_forecast_for_location(lat, lng)
 
           expect(data).to be_a(Hash)
 

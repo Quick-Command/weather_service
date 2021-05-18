@@ -10,7 +10,7 @@ RSpec.describe CurrentWeather do
       VCR.use_cassette('get_current_weather_data') do
         location = 'jacksonville,fl'
         coordinates = MapQuestService.call(location)[:results].first[:locations].first[:latLng]
-        forecast = WeatherService.find_forecast_for_location(coordinates[:lat], coordinates[:lng])
+        forecast = WeatherService.get_forecast_for_location(coordinates[:lat], coordinates[:lng])
         current_weather = CurrentWeather.new(forecast[:current])
 
         expect(current_weather).to be_a(CurrentWeather)
