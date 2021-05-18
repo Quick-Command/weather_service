@@ -10,12 +10,11 @@ RSpec.describe DistancePoro do
     }
 
     data = {
-      route: [
+      route:
         {
         formattedTime: "18:24:27",
         distance: 1300
         }
-      ]
     }
 
     distance_info = DistancePoro.new(params, data)
@@ -35,11 +34,11 @@ RSpec.describe DistancePoro do
     }
 
     data = {
-      route: [
+      route:
         {
         distance: 1300
         }
-      ]
+
     }
 
     distance_info = DistancePoro.new(params, data)
