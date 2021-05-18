@@ -3,11 +3,16 @@ require './app/services/map_quest_service'
 require './app/facades/distance_facade'
 
 RSpec.describe DistanceFacade do
-  xit '.forecast' do
-    VCR.use_cassette('jacksonville,fl') do
-      distance = DistanceFacade.forecast('jacksonville,fl')
-      expect(distance).to have_key(:lat)
-      expect(distance).to have_key(:lng)
+  it '.forecast' do
+    VCR.use_cassette('no_to_chicago') do
+      trip_params = {
+        origin: 'New Orleans, LA',
+        destination: 'Chicago, IL'
+      }
+      distance = DistanceFacade.calculate(trip_params)
+      binding.pry
+      expect(distance).to have_key(:route)
+      check_hash_structure(distance[:route])
     end
   end
 end
