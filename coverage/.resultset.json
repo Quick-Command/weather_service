@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jeremiahmichlitsch/Turing/Mod_4/Projects/weather_service/spec/facades/weather_facade_spec.rb": {
+      "/Users/jeremiahmichlitsch/Turing/Mod_4/Projects/weather_service/spec/facades/distance_facade_spec.rb": {
         "lines": [
           1,
           1,
@@ -9,10 +9,10 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null
@@ -35,7 +35,6 @@
           null,
           2,
           null,
-          null,
           1,
           null,
           1,
@@ -46,6 +45,33 @@
           null,
           1,
           2,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jeremiahmichlitsch/Turing/Mod_4/Projects/weather_service/app/facades/distance_facade.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/jeremiahmichlitsch/Turing/Mod_4/Projects/weather_service/spec/facades/weather_facade_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -135,8 +161,6 @@
           null,
           null,
           1,
-          null,
-          1,
           1,
           1,
           1,
@@ -148,6 +172,6 @@
         ]
       }
     },
-    "timestamp": 1621284828
+    "timestamp": 1621353365
   }
 }

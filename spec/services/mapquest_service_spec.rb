@@ -33,7 +33,6 @@ RSpec.describe MapQuestService do
       end
     end
   end
-<<<<<<< HEAD
 
   describe '.distance_call' do
     it 'gets info for a trip between two cities' do
@@ -61,15 +60,11 @@ RSpec.describe MapQuestService do
         }
 
         trip_info = MapQuestService.distance_call(trip_params)
-
         expect(trip_info).to be_a(Hash)
         check_hash_structure(trip_info, :route, Hash)
         check_hash_structure(trip_info[:route], :formattedTime, String)
-        check_hash_structure(trip_info[:route], :time, Numeric)
         check_hash_structure(trip_info[:route], :distance, Numeric)
       end
     end
   end
-=======
->>>>>>> 2c1977b7dcace3839a444b29bda6f0de53c8e5f3
 end
