@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-18T10:50:13-06:00">2021-05-18T10:50:13-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-18T13:44:07-06:00">2021-05-18T13:44:07-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>114</b> relevant lines,
-    <span class="green"><b>114</b> lines covered</span> and
+    <b>115</b> relevant lines,
+    <span class="green"><b>115</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,9 +95,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7791d9d28d786a3851ccb505aecae94833b6cf02" class="src_link" title="app/poros/distance_poro.rb">app/poros/distance_poro.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">20</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -139,7 +139,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5c45371129415e90febe6ab2352940c5f887f362" class="src_link" title="spec/poros/distance_poro_spec.rb">spec/poros/distance_poro_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">21</td>
+            <td class="cell--number">30</td>
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
@@ -482,8 +482,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -523,7 +523,7 @@
 
             
 
-            <code class="ruby">              :end_city</code>
+            <code class="ruby">              :end_city,</code>
           </li>
         </div>
       
@@ -534,7 +534,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">              :time,</code>
           </li>
         </div>
       
@@ -545,29 +545,29 @@
 
             
 
+            <code class="ruby">              :distance</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">  def initialize(params, travel_time = nil)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @start_city = params[:origin]</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -578,7 +578,7 @@
 
             
 
-            <code class="ruby">    @end_city = params[:destination]</code>
+            <code class="ruby">  def initialize(params, data)</code>
           </li>
         </div>
       
@@ -589,29 +589,29 @@
 
             
 
-            <code class="ruby">    @time = travel_time</code>
+            <code class="ruby">    @start_city = params[:origin]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    @end_city = params[:destination]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    @time = travel_time(data)</code>
           </li>
         </div>
       
@@ -622,18 +622,18 @@
 
             
 
-            <code class="ruby">  def travel_time</code>
+            <code class="ruby">    @distance = data[:route][0][:distance]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">    return &#39;impossible&#39; if @time.nil?</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -655,7 +655,7 @@
 
             
 
-            <code class="ruby">    time = @time.split(&#39;:&#39;).map(&amp;:to_i)</code>
+            <code class="ruby">  def travel_time(data)</code>
           </li>
         </div>
       
@@ -666,12 +666,34 @@
 
             
 
-            <code class="ruby">    &quot;#{time[0]} #{&#39;hour&#39;.pluralize(time[0])}, #{time[1]} #{&#39;minute&#39;.pluralize(time[1])}&quot;</code>
+            <code class="ruby">    return &quot;Can&#39;t reach incident.&quot; if data[:route][0][:formattedTime].nil?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    time = data[:route][0][:formattedTime].split(&#39;:&#39;).map(&amp;:to_i)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    &quot;#{time[0]} #{&#39;hour&#39;.pluralize(time[0])}, #{time[1]} #{&#39;minute&#39;.pluralize(time[1])} away.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -682,7 +704,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -1576,18 +1598,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    travel_time = &quot;18:24:27&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -1598,13 +1609,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="12">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    distance_info = DistancePoro.new(params, travel_time)</code>
+            <code class="ruby">    data = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">      route: [</code>
           </li>
         </div>
       
@@ -1615,29 +1637,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        {</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="15">
+            
             
 
             
 
-            <code class="ruby">    expect(distance_info).to be_a(DistancePoro)</code>
+            <code class="ruby">        formattedTime: &quot;18:24:27&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="16">
+            
             
 
             
 
-            <code class="ruby">    expect(distance_info).to have_attributes(</code>
+            <code class="ruby">        distance: 1300</code>
           </li>
         </div>
       
@@ -1648,7 +1670,7 @@
 
             
 
-            <code class="ruby">      start_city: params[:origin],</code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
@@ -1659,7 +1681,7 @@
 
             
 
-            <code class="ruby">      end_city: params[:destination],</code>
+            <code class="ruby">      ]</code>
           </li>
         </div>
       
@@ -1670,7 +1692,7 @@
 
             
 
-            <code class="ruby">      travel_time: &quot;18 hours, 24 minutes&quot;)</code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
@@ -1681,12 +1703,111 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    distance_info = DistancePoro.new(params, data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(distance_info).to be_a(DistancePoro)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(distance_info).to have_attributes(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">      start_city: params[:origin],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">      end_city: params[:destination],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">      time: &quot;18 hours, 24 minutes away.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">      distance: 1300)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 

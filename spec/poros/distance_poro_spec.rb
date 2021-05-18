@@ -8,14 +8,23 @@ RSpec.describe DistancePoro do
       origin: 'Denver,CO',
       destination: 'Seattle,WA'
     }
-    travel_time = "18:24:27"
 
-    distance_info = DistancePoro.new(params, travel_time)
+    data = {
+      route: [
+        {
+        formattedTime: "18:24:27",
+        distance: 1300
+        }
+      ]
+    }
+
+    distance_info = DistancePoro.new(params, data)
 
     expect(distance_info).to be_a(DistancePoro)
     expect(distance_info).to have_attributes(
       start_city: params[:origin],
       end_city: params[:destination],
-      travel_time: "18 hours, 24 minutes")
+      time: "18 hours, 24 minutes away.",
+      distance: 1300)
   end
 end
