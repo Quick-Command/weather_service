@@ -27,4 +27,28 @@ RSpec.describe DistancePoro do
       time: "18 hours, 24 minutes away.",
       distance: 1300)
   end
+
+  it 'exists and does not have time attribute' do
+    params = {
+      origin: 'Denver,CO',
+      destination: 'Seattle,WA'
+    }
+
+    data = {
+      route: [
+        {
+        distance: 1300
+        }
+      ]
+    }
+
+    distance_info = DistancePoro.new(params, data)
+
+    expect(distance_info).to be_a(DistancePoro)
+    expect(distance_info).to have_attributes(
+      start_city: params[:origin],
+      end_city: params[:destination],
+      time: "Can't reach incident.",
+      distance: 1300)
+  end
 end
