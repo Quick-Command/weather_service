@@ -10,9 +10,8 @@ RSpec.describe DistanceFacade do
         destination: 'Chicago, IL'
       }
       distance = DistanceFacade.calculate(trip_params)
-      binding.pry
       expect(distance).to have_key(:route)
-      check_hash_structure(distance[:route])
+      check_hash_structure(distance[:route], :distance, Numeric)
     end
   end
 end

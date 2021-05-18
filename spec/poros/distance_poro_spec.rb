@@ -12,12 +12,10 @@ RSpec.describe DistancePoro do
 
     distance_info = DistancePoro.new(params, travel_time)
 
-    expect(distance_info).to be_a(RoadTripPoro)
+    expect(distance_info).to be_a(DistancePoro)
     expect(distance_info).to have_attributes(
       start_city: params[:origin],
       end_city: params[:destination],
-      travel_time: "18 hours, 24 minutes",
-      }
-    )
+      travel_time: "18 hours, 24 minutes")
   end
 end
