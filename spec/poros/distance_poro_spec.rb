@@ -24,7 +24,7 @@ RSpec.describe DistancePoro do
       start_city: params[:origin],
       end_city: params[:destination],
       drive_time: "18 hours, 24 minutes away.",
-      distance: 1300)
+      distance_in_miles: 1300)
   end
 
   it 'exists and does not have time attribute' do
@@ -48,6 +48,6 @@ RSpec.describe DistancePoro do
       start_city: params[:origin],
       end_city: params[:destination],
       drive_time: "Can't reach incident.",
-      distance: 1300)
+      distance_in_miles: 1300)
   end
 end
