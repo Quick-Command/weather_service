@@ -1,3 +1,12 @@
+require './app/services/map_quest_service'
+require './app/poros/distance_poro'
+require './app/serializers/distance_serializer'
+require './app/facades/distance_facade'
+require 'sinatra'
+require 'json'
+require 'fast_jsonapi'
+require 'sinatra/json'
+
 class WeatherServiceApp < Sinatra::Base
   get '/' do
      "Hello, World!"

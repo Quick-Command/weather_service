@@ -1,13 +1,13 @@
 class DistancePoro
-  attr_reader :start_city,
-              :end_city,
+  attr_reader :origin,
+              :destination,
               :drive_time,
               :distance_in_miles
 
 
   def initialize(params, data)
-    @start_city = params[:origin]
-    @end_city = params[:destination]
+    @origin = params[:origin]
+    @destination = params[:destination]
     @drive_time = travel_time(data)
     @distance_in_miles = data[:route][:distance]
   end

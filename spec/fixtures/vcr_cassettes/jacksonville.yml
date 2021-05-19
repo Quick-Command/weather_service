@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 May 2021 14:41:58 GMT
+      - Wed, 19 May 2021 15:07:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1038'
+      - '1036'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,7 +35,7 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Wed, 19 May 2021 14:41:58 GMT
+      - Wed, 19 May 2021 15:07:34 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +43,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=08E95D9C2C97A8296D5635FFBEAC22D6; Path=/; HttpOnly; Secure
+      - JSESSIONID=3673766DD126C2FD725F9CD19CC7E9BA; Path=/; HttpOnly; Secure
       Status:
       - success
       Transactionweight:
@@ -55,6 +55,6 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"jacksonville,fl"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Jacksonville","adminArea5Type":"City","adminArea4":"Duval
-        County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1816102766"}]}]}'
-  recorded_at: Wed, 19 May 2021 14:41:58 GMT
+        County","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039196","unknownInput":"","type":"s","latLng":{"lat":30.325968,"lng":-81.65676},"displayLatLng":{"lat":30.325968,"lng":-81.65676},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_KEY&type=map&size=225,160&locations=30.325968,-81.65676|marker-sm-50318A-1&scalebar=true&zoom=12&rand=284758082"}]}]}'
+  recorded_at: Wed, 19 May 2021 15:07:34 GMT
 recorded_with: VCR 6.0.0
