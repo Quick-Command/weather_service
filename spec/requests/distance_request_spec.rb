@@ -3,9 +3,7 @@ require 'rspec'
 require 'rack/test'
 require 'spec_helper'
 require './app/controllers/weather_service_app'
-require './app/facades/distance_facade'
-require './app/poros/distance_poro'
-require './app/serializers/distance_serializer'
+
 
 describe 'Climate Data API' do
   include Rack::Test::Methods
