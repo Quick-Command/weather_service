@@ -1,3 +1,12 @@
+require 'json'
+require 'faraday'
+require 'fast_jsonapi'
+require 'sinatra'
+require './app/services/weather_service'
+require './app/services/map_quest_service'
+require 'sinatra/json'
+require './app/facades/weather_facade'
+
 class Forecast
   attr_reader :id,
               :current_weather,
