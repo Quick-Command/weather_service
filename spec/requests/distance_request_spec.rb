@@ -2,15 +2,11 @@ require './app/services/map_quest_service'
 require 'rspec'
 require 'rack/test'
 require 'spec_helper'
-require './app/controllers/distance_service_app'
+require './app/controllers/weather_service_app'
 
 
 describe 'Climate Data API' do
   include Rack::Test::Methods
-
-  def app
-    @app = DistanceServiceApp
-  end
 
   it 'has a successful response' do
     VCR.use_cassette('denver_to_seattle') do
