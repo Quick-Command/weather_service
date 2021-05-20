@@ -26,12 +26,7 @@ describe 'Climate Data API' do
       data = parsed[:data]
 
       expect(data).to be_a(Hash)
-      # expect(data[:type]).to eq("climate")
-      # expect(data[:type]).to be_a(String)
-      # expect(data[:id]).to eq(nil)
-      # expect(data.keys).to eq([:id, :type, :attributes])
-      # expect(data[:attributes]).to be_a(Hash)
-      # expect(data[:attributes].keys).to eq([:temp, :precip, :vintage, :region, :start_date, :end_date])
+      
     end
   end
 end
