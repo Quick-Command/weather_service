@@ -10,8 +10,8 @@ RSpec.describe 'the weather service' do
     describe 'fetch data' do
       it 'returns the forecast data for a given location based on longitude and latitude' do
         VCR.use_cassette('weather_data_chicago') do
-          lat = 44.058088
-          lng = -121.31515
+          lat = 41.8832
+          lng = -87.6324
           data = WeatherService.get_forecast_for_location(lat, lng)
 
           expect(data).to be_a(Hash)
