@@ -2,14 +2,14 @@ require './app/services/map_quest_service'
 require 'rspec'
 require 'rack/test'
 require 'spec_helper'
-require './app/controllers/weather_service_app'
+require './app/controllers/map_quest_service_app'
 
 
 describe 'Climate Data API' do
   include Rack::Test::Methods
 
   def app
-    @app = WeatherServiceApp
+    @app = MapQuestServiceApp
   end
 
   it 'has a successful response' do

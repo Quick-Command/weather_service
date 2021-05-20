@@ -7,7 +7,7 @@ require 'json'
 require 'fast_jsonapi'
 require 'sinatra/json'
 
-class WeatherServiceApp < Sinatra::Base
+class MapQuestServiceApp < Sinatra::Base
   #get '/' do
   #   "Hello, World!"
   #end
