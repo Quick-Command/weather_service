@@ -78,6 +78,8 @@ GEM
     net-http-pipeline (1.0.1)
     nokogiri (1.11.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
+      racc (~> 1.4)
     openssl (2.2.0)
     pg (1.2.3)
     pry (0.14.1)
@@ -169,6 +171,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   capybara
