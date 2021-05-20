@@ -1,3 +1,4 @@
 # Ignore application configure
 config/application.yml
 /coverage/
+.DS_Store
