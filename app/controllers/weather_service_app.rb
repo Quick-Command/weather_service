@@ -15,14 +15,33 @@ class WeatherServiceApp < Sinatra::Base
   end
 
   set :root, File.expand_path("..", __dir__)
+  set :show_exceptions, false
+  # disable :raise_errors
 
   get '/api/v1/forecast_data' do
-    location = params[:location]
-    weather = WeatherFacade.forecast(location)
+    begin
+      location = params[:location]
+      weather = WeatherFacade.forecast(location)
 
-    # render json: ForecastSerializer.new(weather)
-    # status 201
-    body ForecastSerializer.new(weather).serialized_json
-    status 200
+      body ForecastSerializer.new(weather).serialized_json
+      status 200
+
+    end
+    # rescue NoMethodError => e
+    #   status 400
+    # end
+
+    # if params[:location].nil?
+    #   halt 400, "Location paramter is missing."
+    # end
+
+
+    # error 400 do
+    #   "Parameter missing: Please provide a location"
+    # end
+
+    # error 400..500 do
+    #   "Location not found. Please enter valid location."
+    # end
   end
 end
