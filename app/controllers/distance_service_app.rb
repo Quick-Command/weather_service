@@ -7,7 +7,7 @@ require 'json'
 require 'fast_jsonapi'
 require 'sinatra/json'
 
-class MapQuestServiceApp < Sinatra::Base
+class DistanceServiceApp < Sinatra::Base
   #get '/' do
   #   "Hello, World!"
   #end
