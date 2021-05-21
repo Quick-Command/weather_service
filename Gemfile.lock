@@ -69,7 +69,6 @@ GEM
       addressable (~> 2.3)
     method_source (1.0.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.1)
     minitest (5.14.4)
     multi_json (1.15.0)
     multipart-post (2.1.1)
@@ -77,9 +76,11 @@ GEM
       ruby2_keywords (~> 0.0.1)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
-    nokogiri (1.11.4)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.11.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
+      racc (~> 1.4)
+    openssl (2.2.0)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -169,7 +170,8 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   capybara
@@ -178,6 +180,7 @@ DEPENDENCIES
   figaro!
   json
   launchy
+  openssl
   pg
   pry
   rack-test
@@ -198,4 +201,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   2.1.4
+   2.2.16

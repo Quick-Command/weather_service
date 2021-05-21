@@ -22,6 +22,7 @@ group :development, :test do
   gem 'rack-test'
   gem 'rake'
   gem 'pry'
+  gem 'openssl'
 end
 
 group :test do

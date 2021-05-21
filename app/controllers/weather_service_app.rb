@@ -8,6 +8,9 @@ require './app/poros/forecast'
 require 'sinatra/json'
 require './app/facades/weather_facade'
 require './app/serializers/forecast_serializer'
+require './app/poros/distance_poro'
+require './app/serializers/distance_serializer'
+require './app/facades/distance_facade'
 
 class WeatherServiceApp < Sinatra::Base
   before do
@@ -27,6 +30,7 @@ class WeatherServiceApp < Sinatra::Base
       status 200
 
     end
+
     # rescue NoMethodError => e
     #   status 400
     # end
@@ -43,5 +47,13 @@ class WeatherServiceApp < Sinatra::Base
     # error 400..500 do
     #   "Location not found. Please enter valid location."
     # end
+  end
+
+  get '/api/v1/distance' do
+
+    data = DistanceFacade.calculate(params)
+
+    body DistanceSerializer.new(data).serialized_json
+    status 200
   end
 end
