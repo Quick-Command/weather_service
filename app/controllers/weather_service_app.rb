@@ -39,15 +39,24 @@ class WeatherServiceApp < Sinatra::Base
       body "Parameter missing: Please provide a valid location".to_json
     end
 
-    # error 400..500 do
-    #   "Location not found. Please enter valid location."
-    # end
 
   get '/api/v1/distance' do
+    begin
+      data = DistanceFacade.calculate(params)
+      if data.distance_in_miles == nil || data.drive_time == "Can't reach incident."
+        body "Parameter(s) missing: Please provide a valid origin and destination".to_json
+        status 401
+      else
+        body DistanceSerializer.new(data).serialized_json
+        status 200
+      end
+    end
 
-    data = DistanceFacade.calculate(params)
+    rescue NoMethodError => e
+    status 401
 
-    body DistanceSerializer.new(data).serialized_json
-    status 200
+    end
+    error 401 do
+      body "Parameter(s) missing: Please provide a valid origin and destination".to_json
   end
 end

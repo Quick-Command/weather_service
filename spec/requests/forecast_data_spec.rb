@@ -60,7 +60,6 @@ RSpec.describe 'Weather Service API App' do
 
     it 'returns errors for invalid params' do
       get "/api/v1/forecast_data?nonsense=lfkjhdf"
-      binding.pry
       expect(last_response.status).to eq(400)
 
     end
