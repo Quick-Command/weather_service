@@ -31,23 +31,17 @@ class WeatherServiceApp < Sinatra::Base
 
     end
 
-    # rescue NoMethodError => e
-    #   status 400
-    # end
+    rescue NoMethodError => e
+      status 400
+    end
 
-    # if params[:location].nil?
-    #   halt 400, "Location paramter is missing."
-    # end
-
-
-    # error 400 do
-    #   "Parameter missing: Please provide a location"
-    # end
+    error 400 do
+      body "Parameter missing: Please provide a valid location".to_json
+    end
 
     # error 400..500 do
     #   "Location not found. Please enter valid location."
     # end
-  end
 
   get '/api/v1/distance' do
 

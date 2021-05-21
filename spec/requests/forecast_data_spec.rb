@@ -15,7 +15,6 @@ RSpec.describe 'Weather Service API App' do
         get "/api/v1/forecast_data?location=#{location}"
 
         expect(last_response).to be_ok
-
         result = JSON.parse(last_response.body, symbolize_names: true)
         data = result[:data]
 
@@ -38,17 +37,32 @@ RSpec.describe 'Weather Service API App' do
     end
   end
 
-  # describe 'sad path' do
-  #   it 'returns errors for missing params' do
-  #     get "/api/v1/forecast_data"
-  #
-  #     expect(last_response.status).to eq(400)
-  #
-  #     error = JSON.parse(last_response.body, symbolize_names: true)
-  #
-  #     expect(error).to be_a(Hash)
-  #     expect(error).to be_a(String)
-  #     expect(error).to eq('Parameter missing: Please provide a location')
-  #   end
-  # end
+  describe 'sad path' do
+    it 'returns errors for missing params' do
+      get "/api/v1/forecast_data"
+
+      expect(last_response.status).to eq(400)
+      error = JSON.parse(last_response.body, symbolize_names: true)
+
+      expect(error).to be_a(String)
+      expect(error).to eq('Parameter missing: Please provide a valid location')
+    end
+
+    it 'returns errors for invalid location' do
+      location = 'fldjflksdhflkdshf'
+      get "/api/v1/forecast_data?location=#{location}"
+      expect(last_response.status).to eq(400)
+      error = JSON.parse(last_response.body, symbolize_names: true)
+
+      expect(error).to be_a(String)
+      expect(error).to eq('Parameter missing: Please provide a valid location')
+    end
+
+    it 'returns errors for invalid params' do
+      get "/api/v1/forecast_data?nonsense=lfkjhdf"
+      binding.pry
+      expect(last_response.status).to eq(400)
+
+    end
+  end
 end
