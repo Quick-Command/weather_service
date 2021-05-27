@@ -9,7 +9,7 @@ The QuickCommand WeatherService is the microservice application that connects to
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [Other Repos](#other-repos)
-  - [Running the tests](#running-the-tests)
+  - [Running the Tests](#running-the-tests)
   - [Service Oriented Architecture](#service-oriented-architecture)
   - [Endpoints](#endpoints)
   - [Built With](#built-with)
@@ -52,6 +52,10 @@ To get the web application running, please follow these directions to set up you
 
 - For more information on the QuickCommand backend engine, please visit the following links:
   - [Repo](https://github.com/Quick-Command/qc-engine) | [Heroku](https://qc-engine.herokuapp.com/)
+
+## Running the Tests
+- To execute the full test suite, run the following command:
+ `bundle exec rspec spec`
 
 ## Service Oriented Architecture
  QuickCommand Project Design
